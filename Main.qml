@@ -11,7 +11,7 @@ Window {
 
 	Button {
 		id: reloadButton
-		x: 10
+		x: 1800
 		y: 10
 		icon.height: 100
 		icon.width: 100
@@ -23,11 +23,20 @@ Window {
 	}
 
 	Text {
-		id: updatedTime
-		x: 1680
+		x: 10
 		y: 10
 		font.pixelSize: 20
-		font.bold: true
+		font.bold: false
+		color: "#ffffff"
+		text: "Weather data is powerd by Open-Meteo. https://open-meteo.com"
+	}
+
+	Text {
+		id: updatedTime
+		x: 10
+		y: 40
+		font.pixelSize: 20
+		font.bold: false
 		color: "#ffffff"
 	}
 
@@ -457,7 +466,7 @@ Window {
 				var currentHour = (currentDate.getUTCHours() + obj.timeZone) % 24;
 				var iconImage;
 				//console.log(obj.positionName + " : " + currentHour)
-				if (currentHour > 5 && 19 < currentHour) {
+				if (currentHour > 5 && currentHour < 19) {
 					iconImage = iconPathDay;
 				} else {
 					iconImage = iconPathNight;
