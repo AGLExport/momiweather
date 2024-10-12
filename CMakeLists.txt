@@ -16,6 +16,7 @@ target_link_libraries(momiweather
 set(momiweather_resource_files
     "Main.qml" "WeatherItem.qml"
     "images/Blue_Marble_2002_1920x960.png"
+    "icons/wikimedia/View-refresh_Gion-2.svg"
     "icons/day/1.svg" "icons/day/2.svg" "icons/day/3.svg" "icons/day/4.svg" "icons/day/5.svg"
     "icons/day/6.svg" "icons/day/7.svg" "icons/day/8.svg" "icons/day/9.svg" "icons/day/10.svg"
     "icons/day/11.svg" "icons/day/12.svg" "icons/day/13.svg" "icons/day/14.svg" "icons/day/15.svg"
